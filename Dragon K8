@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon K8's Bots — FreeBotCards</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="../">← Back</a>
+    <h1>Alice's Bots</h1>
+  </header>
+  <main class="bots-grid">
+    <!-- ADD BOTS HERE - copy this block for each bot -->
+    <a href="K8BotmakingV3.card.png" class="bot-card" download>
+      <img src="K8BotmakingV3.card.png" alt="Bot One" loading="lazy">
+      <span class="K8BotMakingCard">Bot One</span>
+    </a>
+    <a href="bot2.png" class="bot-card" download>
+      <img src="bot2.png" alt="Bot Two" loading="lazy">
+      <span class="bot-name">Bot Two</span>
+    </a>
+    <a href="bot3.png" class="bot-card" download>
+      <img src="bot3.png" alt=" alt="Bot Three" loading="lazy">
+      <span class="bot-name">Bot Three</span>
+    </a>
+  </main>
+</body>
+</html>
