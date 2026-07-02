@@ -1,0 +1,63 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, sans-serif; background: #0d0d0d; color: #e0e0e0; min-height: 100vh; line-height: 1.5; }
+header { text-align: center; padding: 3rem 1rem 2rem; border-bottom: 1px solid #222; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; background: linear-gradient(135deg, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.tagline { color: #888; margin-top: 0.5rem; font-size: 1.1rem; }
+
+.authors-grid, .bots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.author-card, .bot-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.author-card:hover, .bot-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+  border-color: #444;
+}
+.author-card img, .bot-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.author-card img { aspect-ratio: 1; }
+.bot-card img { aspect-ratio: 343 / 512; }
+
+.author-name, .bot-name {
+  display: block;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.8));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bot-name {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+}
+
+footer { text-align: center; padding: 2rem; color: #555; font-size: 0.85rem; }
+footer a { color: #777; text-decoration: none; }
+footer a:hover { color: #aaa; }
+
+/* Author page header */
+.page-header { max-width: 1100px; margin: 0 auto 2rem; padding: 0 1rem; display: flex; align-items: center; gap: 1rem; }
+.page-header a { color: #888; text-decoration: none; font-size: 0.95rem; }
+.page-header a:hover { color: #fff; }
+.page-header h1 { font-size: 1.75rem; }
